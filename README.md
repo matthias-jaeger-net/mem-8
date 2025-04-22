@@ -15,11 +15,7 @@ With each flip, the tension builds. Can you keep your cool as the lives tick dow
 
 🎧 Featuring dynamic **sound effects**, responsive **visual feedback**, and a fast-paced challenge, MEM-8 is endlessly replayable and seriously fun.
 
----
-
 ## 👉 [Play MEM-8 Now](https://matthias-jaeger-net.github.io/mem-8/)
-
----
 
 ## Powered by:
 
