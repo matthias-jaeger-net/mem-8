@@ -1,12 +1,29 @@
-# MEM-8: The Memory Match Challenge
+# MEM-8: The Ultimate Memory Match Challenge
 
 ![MEM-8 Cover](cover.png)
 
-MEM-8 is a dynamic and engaging memory card matching game designed to test your focus, memory, and speed. Flip cards to find matching pairs. You start with 8 lives and aim to match all 8 pairs before running out. Each successful match rewards you with a life, while mismatches cost you one. With sound effects, visual feedback, and rising tension as lives drop, MEM-8 challenges your memory and speed in a fun, replayable format.
+Looking for a quick brain workout or a way to crush your personal best? **MEM-8** is an addictive memory game that’s simple to play—but surprisingly hard to master.
 
-Whether you're looking for a casual brain teaser or want to beat your own win streak, MEM-8 offers an addictive challenge that’s easy to play and hard to master.
+## 🧠 Flip. Match. Survive.
 
-Sound effects: https://pixabay.com
-JavaScript: https://p5js.org/
+In **MEM-8**, your focus, memory, and reflexes are put to the test. Flip cards to reveal hidden pairs. Start with **8 lives** and match all **8 pairs** before running out.
 
-# [Play MEM-8](https://matthias-jaeger-net.github.io/mem-8/)
+-   ✅ **Match a pair?** Gain a life.
+-   ❌ **Miss a match?** Lose one.
+
+With each flip, the tension builds. Can you keep your cool as the lives tick down?
+
+🎧 Featuring dynamic **sound effects**, responsive **visual feedback**, and a fast-paced challenge, MEM-8 is endlessly replayable and seriously fun.
+
+---
+
+## 👉 [Play MEM-8 Now](https://matthias-jaeger-net.github.io/mem-8/)
+
+---
+
+## Powered by:
+
+-   🎵 Sound effects: [Pixabay](https://pixabay.com)
+-   ⚙️ JavaScript framework: [p5.js](https://p5js.org/)
+-   🧬 Vibe code: [ChatGPT](https://chatgpt.com)
+-   🚀 Hosting: [GitHub Pages](https://github.com)
