@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+body {
+  font-size: 2rem;
+  background: #111;
+  color: #03A9F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.warning {
+  color: orange;
+}
+.waring div:hover {
+  border-color: orange;
+}
+
+.danger {
+  color: coral;
+}
+.danger div:hover {
+  border-color: coral;
+}
+
+#snackBarontainer {
+  position: fixed;
+  bottom: 0;
+  padding: 16px;
+}
+
+.modal {
+  background: #03A9F4;
+  color: black;
+  width: 400px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button {
+  background: black;
+  color: #03A9F4;
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: 0;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 120px 120px);
+}
+
+.card-container {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 100%;
+  perspective: 1000px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  cursor: pointer;
+  border-radius: 12px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  font-size: 3.2rem;
+  font-weight: 700;
+  user-select: none;
+}
+
+.front {
+  background-color: #283035;
+}
+
+.card:hover .front {
+  border: 4px solid;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #2196F3;
+  color: #000;
+}
+
+.card.matched .back {
+  background-color: #8BC34A;
+}
+
+.card.matched .front {
+  background-color: #8BC34A;
+}
+
+#hud {
+  position: fixed;
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  font-family: "Orbitron", sans-serif;
+}
+
+#logo {
+  flex: 1;
+}
+
+#livesContainer {
+  text-align: right;
+}
+
+#winsContainer {
+  text-align: right;
+}
+
+/* Correct match: bounce effect */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.01);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  70% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce {
+  animation: bounce 0.5s ease;
+}
+
+/* Wrong match: quick shake or flash */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-4px, 0);
+  }
+  40% {
+    transform: translate(4px, 0);
+  }
+  60% {
+    transform: translate(-4px, 0);
+  }
+  80% {
+    transform: translate(4px, 0);
+  }
+}
+
+.shake {
+  animation: shake 0.4s ease;
+}
+
+@keyframes restartPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.restart {
+  animation: restartPulse 0.6s ease-in-out;
+}
